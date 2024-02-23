@@ -18,7 +18,7 @@
 - JDK 1.8부터는 함수형 프로그래밍(Functional Programming)을 지원함
 - 메모리 관리(Garbage Collector)를 자동으로 해주기 때문에 따로 처리할 필요X
 
-## Complie과 Deconplie
+## Complie과 Decomplie
 #### Compile 컴파일
 #### : 소스코드를 기계어로 번역하는 작업.
 
