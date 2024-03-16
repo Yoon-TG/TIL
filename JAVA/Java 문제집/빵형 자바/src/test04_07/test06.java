@@ -7,18 +7,57 @@ public class test06 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//5) 입력된 값을 배열의 값과 비교, 몇 번 검색하여 찾았는지 
-		//선형 검색을 이용해 소스코드 작성
-		//ex.4, 6, 9, 2
-		String[] answer = {"4", "6", "9", "2"};
-		int num = 0; 
+//		//6) 구구단의 값을 2차원 배열에 넣은 후 출력하기
+//		//넣고 출력 둘 다 반복문으로 만들어보기
+//		//출력값은 tab으로 간격 조정
+//		//넣기
+//		int[][] gugudan = new int[8][9];
+//		
+//		for(int i=2; i<10; i++) {
+//			for(int j=1; j<10; j++) {
+//				gugudan[i-2][j-1] = i*j;
+//			}
+//		}
+//		
+//		int num = 2;
+//		//출력하기
+//		for(int[] a : gugudan) {
+//			System.out.printf("===== %d 단 ===== \n", num);
+//			for(int b : a) {
+////				System.out.printf("%d \t",b); //답은 이건데
+//				System.out.printf("%d ",b); //이 쪽이 더 보기 편함
+//			}
+//			System.out.println();
+//			num++;
+//		}
 		
-		Scanner scan5 = new Scanner(System.in);
 		
-		System.out.print("검색할 값을 입력하세요 : ");
-		String choNum = scan5.next();
-	
 		
+//		//5) 입력된 값을 배열의 값과 비교, 몇 번 검색하여 찾았는지 
+//		//선형 검색을 이용해 소스코드 작성
+//		//ex.4, 6, 9, 2
+//		String[] answer = {"4", "6", "9", "2"};
+//		int num = 0; 
+//		
+//		Scanner scan5 = new Scanner(System.in);
+//		
+//		System.out.print("검색할 값을 입력하세요 : ");
+//		String choStr = scan5.next();
+//		
+//		for(String testStr : answer) {
+//			num +=1; //횟수 추가
+//			
+//			if(testStr.equals(choStr)) { //같은 경우 반복문 종료
+//				num += 1;
+//				System.out.printf("\n %d번 검색하여 값을 찾았습니다.", num);
+//				break;
+//			}
+//			
+//			if(num==answer.length) { //끝까지 돌았는데 못 찾은 경우
+//				System.out.println("찾을 수 없는 값입니다.");
+//			}
+//		}
+
 		
 //		//4) 문자열 입력 받고 아스키코드 활용하여 암호화(-3) > 다시 복호화
 //		Scanner scan4 = new Scanner(System.in);
