@@ -11,12 +11,37 @@ public class test07 {
 		// TODO Auto-generated method stub
 		//4) 모든 단어는 소문자
 		//공백 다음에 오는 알파벳은 공백을 제거하고 대문자 변환.
+		//입력값 = Internet of things / 출력값 = internetOfThing
+		//boolean 으로 구분하고 판단하는 방법을 좀 더 활용해볼 수 있도록 신경써야겠다...
 		String str = "Internet of things";
+		String result = "";
 		
-		//charAt() 이용하기
+		str = str.toLowerCase(); //모두 소문자로 바꿈
+
+		boolean changeFlag = false;
+		
+		for(var c : str.toCharArray()) {
+			//str을 돌면서
+			if(changeFlag) { //c가 공백인 경우에만 실행됨
+				changeFlag = false;
+				c = (char)((int)c - 32); //대문자 변환
+			}
+			
+			if(c == ' ') { //공백인경우
+				changeFlag = true; 
+				continue;
+			}
+			
+			result += c; //결과값 더하기
+		}
+		
+		System.out.println(result);
+		
 		
 		
 //		//3)전기세 계산 프로그램 - //사용량을 키보드로 입력받아 계산
+// 참고 : https://seeminglyjs.tistory.com/244
+
 //		/*전력 사용량 : 201~400kwh
 //		//기본 요금 1600, 단계별로 차등
 //		//1단계 : 200kwh*93.3(1~200까지는 93.3원)
